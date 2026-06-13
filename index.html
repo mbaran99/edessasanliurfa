@@ -1,588 +1,506 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edessa Prime Şanlıurfa Masaj Salonu - Profesyonel Spa & Masaj</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Şanlıurfa Masaj Salonu | Edessa Prime Masaj ve SPA Merkezi | Haliliye</title>
+  <meta name="description" content="Şanlıurfa Haliliye'de lüks ve profesyonel masaj deneyimi. Edessa Prime Masaj Salonu'nda Klasik, Soft, Medikal, VIP ve Sultan masajı paketleri ile yenilenin. Hemen randevu alın!">
+  <meta name="keywords" content="şanlıurfa masaj, şanlıurfa masaj salonu, urfa masaj, haliliye masaj, edessa prime masaj, edessa masaj salonu, şair şevket masaj, şanlıurfa medikal masaj, urfa spa, şanlıurfa vip masaj, şanlıurfa jakuzi masaj, şanlıurfa kese köpük, masaj salonları şanlıurfa, aksoy apartmanı masaj, 119 sokak masaj">
+  <meta name="author" content="Edessa Prime Masaj Salonu">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://edessaprimemasaj.com/">
+  
+  <meta name="geo.region" content="TR-63">
+  <meta name="geo.placename" content="Şanlıurfa">
+  <meta name="geo.position" content="37.1610;38.7960">
+
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="Edessa Prime Masaj Salonu - Şanlıurfa Haliliye">
+  <meta property="og:description" content="Şair Şevket Mahallesi'nde Jakuzi keyfi, VIP paketler, Medikal ve Klasik masaj seçenekleri ile profesyonel SPA hizmeti.">
+  <meta property="og:url" content="https://edessaprimemasaj.com/">
+  <meta property="og:site_name" content="Edessa Prime Masaj Salonu">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="business:contact_data:street_address" content="Şair Şevket, 119. Sk. aksoy apt kat 2 daire 3">
+  <meta property="business:contact_data:locality" content="Haliliye">
+  <meta property="business:contact_data:region" content="Şanlıurfa">
+  <meta property="business:contact_data:country_name" content="Turkey">
+  <meta property="business:contact_data:phone_number" content="+905425986344">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MassageBusiness",
+    "name": "Edessa Prime Masaj Salonu",
+    "alternateName": "Şanlıurfa Edessa Prime SPA",
+    "description": "Şanlıurfa Haliliye'de profesyonel masaj, jakuzi keyfi, kese köpük ve cilt bakımı hizmetleri sunan lüks SPA ve masaj salonu.",
+    "url": "https://edessaprimemasaj.com/",
+    "telephone": "+905425986344",
+    "priceRange": "1000TL - 4000TL",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Şair Şevket, 119. Sk. aksoy apt kat 2 daire 3",
+      "addressLocality": "Haliliye",
+      "addressRegion": "Şanlıurfa",
+      "postalCode": "63000",
+      "addressCountry": "TR"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "10:00",
+      "closes": "23:00"
+    }
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ===== GENEL RESET & TEMA DEĞİŞKENLERİ ===== */
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Plus Jakarta Sans',sans-serif;background:#0a0a0a;color:#e5e5e5;overflow-x:hidden;line-height:1.6}
+    a{text-decoration:none;color:inherit}
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- FontAwesome (İkonlar için) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    :root {
+      --primary: #050505;
+      --primary-light: #111111;
+      --accent: #dfb743; /* Premium Gold */
+      --accent-hover: #c9a130;
+      --text-dark: #0f1115;
+      --text-muted: #a6a6a6;
+      --bg-soft: #141414;
+      --white: #ffffff;
+      --card-bg: #181818;
+    }
 
-    <style>
-        :root {
-            --bg-dark: #0f0f0f;
-            --bg-light: #161616;
-            --card-bg: #1d1d1d;
-            --gold: #d4af37;
-            --gold-hover: #b5952f;
-            --text-main: #f5f5f5;
-            --text-muted: #aaaaaa;
-            --whatsapp: #25d366;
-            --whatsapp-hover: #1ebd5a;
-        }
+    /* ===== NAVBAR ===== */
+    .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:22px 50px;display:flex;align-items:center;justify-content:space-between;transition:all 0.4s;background:transparent;}
+    .navbar.scrolled{background:rgba(5, 5, 5, 0.98);backdrop-filter:blur(15px);padding:14px 50px;box-shadow:0 4px 30px rgba(0,0,0,0.6);border-bottom:1px solid rgba(223,183,67,0.15);}
+    
+    .nav-logo{display:flex;align-items:center;gap:14px;cursor:pointer;}
+    
+    /* Özel Tasarım Canlı SVG Logo Alanı */
+    .logo-container{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg, #1c1c1c 0%, #0a0a0a 100%);border:2px solid var(--accent);box-shadow:0 4px 14px rgba(223,183,67,0.3);display:flex;align-items:center;justify-content:center;}
+    
+    .logo-text{display:flex;flex-direction:column;}
+    .logo-main{font-family:'Playfair Display',serif;font-weight:700;font-size:23px;letter-spacing:0.5px;color:var(--white);line-height:1.2;}
+    .logo-sub{font-size:10px;font-weight:700;letter-spacing:3.5px;color:var(--accent);text-transform:uppercase;line-height:1;}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+    .nav-links{display:flex;gap:35px;align-items:center}
+    .nav-links a{font-size:14px;font-weight:600;color:rgba(255,255,255,0.85);transition:color 0.3s;position:relative;}
+    .nav-links a::after{content:'';position:absolute;bottom:-6px;left:0;width:0;height:2px;background:var(--accent);transition:width 0.3s;}
+    .nav-links a:hover{color:var(--accent)}
+    .nav-links a:hover::after{width:100%}
+    
+    .nav-cta{background:var(--accent);color:var(--primary) !important;padding:12px 26px;border-radius:8px;font-size:13px !important;font-weight:700 !important;box-shadow:0 4px 15px rgba(223,183,67,0.2);transition:all 0.3s !important;}
+    .nav-cta::after{display:none !important}
+    .nav-cta:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(223,183,67,0.4);background:var(--white);color:var(--primary) !important;}
+    
+    .menu-toggle{display:none;flex-direction:column;gap:6px;cursor:pointer;z-index:1001;}
+    .menu-toggle span{width:26px;height:2.5px;background:var(--white);transition:all 0.3s;border-radius:2px}
+    .menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(6px,6px)}
+    .menu-toggle.active span:nth-child(2){opacity:0}
+    .menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px)}
+    
+    /* ===== HERO ===== */
+    .hero{position:relative;height:100vh;min-height:750px;display:flex;align-items:center;overflow:hidden;}
+    .hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1600&q=80') center/cover no-repeat;}
+    .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg, rgba(5,5,5,0.95) 0%, rgba(5,5,5,0.8) 60%, rgba(5,5,5,0.5) 100%);}
+    .container{width:100%;max-width:1240px;margin:0 auto;padding:0 40px;position:relative;z-index:2}
+    .hero-content{max-width:650px;}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(223,183,67,0.1);border:1px solid var(--accent);padding:8px 18px;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:1px;color:var(--accent);text-transform:uppercase;margin-bottom:24px;}
+    .hero-title{font-family:'Playfair Display',serif;font-weight:700;font-size:56px;color:var(--white);line-height:1.15;margin-bottom:20px;}
+    .hero-title span{color:var(--accent)}
+    .hero-p{font-size:16px;color:var(--text-muted);margin-bottom:35px;}
+    .hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+    
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;border-radius:8px;font-size:14px;font-weight:700;transition:all 0.3s;cursor:pointer;border:none;}
+    .btn-main{background:var(--accent);color:var(--primary);box-shadow:0 6px 20px rgba(223,183,67,0.3);}
+    .btn-main:hover{background:var(--white);color:var(--primary);transform:translateY(-3px);}
+    .btn-sub{background:rgba(255,255,255,0.05);color:var(--white);border:1px solid rgba(255,255,255,0.1);backdrop-filter:blur(5px);}
+    .btn-sub:hover{background:rgba(255,255,255,0.1);border-color:var(--accent);color:var(--accent);}
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
+    /* ===== SEKSİYON DÜZENİ ===== */
+    .section{padding:100px 0;position:relative}
+    .section-header{text-align:center;max-width:700px;margin:0 auto 60px;}
+    .section-badge{font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:12px;display:block;}
+    .section-title{font-family:'Playfair Display',serif;font-weight:700;font-size:40px;color:var(--white);margin-bottom:16px;}
+    .section-desc{font-size:15px;color:var(--text-muted)}
 
-        /* Navigation */
-        nav {
-            background-color: rgba(15, 15, 15, 0.95);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-            position: sticky;
-            top: 0;
-            z-index: 999;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    /* ===== PAKETLER ===== */
+    .packages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
+    .package-card{background:var(--card-bg);border-radius:16px;padding:40px 30px;box-shadow:0 10px 40px rgba(0,0,0,0.3);border:1px solid #252525;transition:all 0.4s ease;display:flex;flex-direction:column;position:relative;overflow:hidden;}
+    .package-card.featured{border-color:var(--accent);background:var(--primary-light);box-shadow:0 15px 45px rgba(223,183,67,0.1);}
+    .package-card h3{font-family:'Playfair Display',serif;font-size:26px;color:var(--white);margin-bottom:8px;}
+    .p-time{font-size:13px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:24px;display:flex;align-items:center;gap:6px;}
+    
+    .p-price-box{margin-bottom:30px;border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:20px;}
+    .p-price{font-size:36px;font-weight:800;color:var(--accent);font-family:'Playfair Display',serif;}
+    .p-price span{font-size:16px;font-weight:500;color:var(--white);}
 
-        nav .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--gold);
-            text-decoration: none;
-            letter-spacing: 2px;
-        }
+    .p-features{list-style:none;margin-bottom:35px;display:flex;flex-direction:column;gap:14px;flex-grow:1;}
+    .p-feature{font-size:14.5px;color:#d0d0d0;display:flex;align-items:flex-start;gap:10px;}
+    .p-feature svg{width:18px;height:18px;stroke:var(--accent);stroke-width:2.5;fill:none;flex-shrink:0;margin-top:2px;}
+    
+    .p-btn{width:100%;text-align:center;padding:14px;border-radius:8px;font-size:13px;font-weight:700;border:1px solid var(--accent);color:var(--accent);transition:all 0.3s;background:transparent;}
+    .package-card:hover .p-btn{background:var(--accent);color:var(--primary);}
+    .package-card.featured .p-btn{background:var(--accent);color:var(--primary);border:none;}
+    .package-card.featured .p-btn:hover{background:var(--white);color:var(--primary);}
+    .package-card:hover {transform:translateY(-8px);border-color:var(--accent);}
+    
+    .p-badge{position:absolute;top:20px;right:-35px;background:var(--accent);color:var(--primary);font-size:10px;font-weight:800;padding:6px 40px;transform:rotate(45deg);text-transform:uppercase;letter-spacing:1px;}
 
-        nav .nav-links {
-            display: flex;
-            gap: 1.5rem;
-        }
+    /* ===== AYRICALIKLAR ===== */
+    .features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+    .feature-box{background:var(--card-bg);padding:35px 24px;border-radius:12px;text-align:center;transition:all 0.3s;border:1px solid #252525;}
+    .feature-box:hover{background:var(--primary-light);border-color:var(--accent);transform:translateY(-4px);}
+    .f-icon{font-size:36px;margin-bottom:16px;display:block;}
+    .feature-box h4{font-size:18px;margin-bottom:12px;font-family:'Playfair Display',serif;color:var(--white);}
+    .feature-box p{font-size:13.5px;color:var(--text-muted);line-height:1.6;}
 
-        nav .nav-links a {
-            color: var(--text-main);
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-        }
+    /* ===== İLETİŞİM & LOKASYON ===== */
+    .contact-wrapper{displaygrid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:center;}
+    .contact-info-side h3{font-family:'Playfair Display',serif;font-size:34px;color:var(--white);margin-bottom:20px;}
+    .contact-info-side p{color:var(--text-muted);font-size:15px;margin-bottom:35px;}
+    .c-method{display:flex;align-items:flex-start;gap:18px;margin-bottom:26px;}
+    .c-icon{width:46px;height:46px;border-radius:10px;background:rgba(223,183,67,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);font-weight:700;}
+    .c-details h4{font-size:15px;color:var(--white);font-weight:700;margin-bottom:4px;}
+    .c-details p, .c-details a{font-size:14px;color:var(--text-muted);line-height:1.5;}
+    .c-details a:hover{color:var(--accent);}
 
-        nav .nav-links a:hover {
-            color: var(--gold);
-        }
+    .map-box{border-radius:20px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.6);height:400px;background:#222;position:relative;border:1px solid #333;}
+    .map-box iframe{width:100%;height:100%;border:none;vertical-align:middle;filter: invert(90%) hue-rotate(180deg);}
+    
+    .direction-btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--primary);padding:12px 24px;border-radius:8px;font-size:13px;font-weight:700;margin-top:15px;box-shadow:0 4px 15px rgba(223,183,67,0.2);transition:all 0.3s;}
+    .direction-btn:hover{background:var(--white);color:var(--primary);transform:translateY(-2px);}
 
-        /* Hero Section */
-        .hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(15, 15, 15, 1)), url('http://googleusercontent.com/image_collection/image_retrieval/17297484329455004611_0');
-            background-size: cover;
-            background-position: center;
-            height: 70vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 1rem;
-        }
+    /* ===== FOOTER ===== */
+    .footer{background:var(--primary);color:var(--white);padding:60px 0 30px;border-top:3px solid var(--accent);}
+    .footer-content{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:30px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,0.05);}
+    .footer-copyright{text-align:center;margin-top:30px;font-size:13px;color:rgba(255,255,255,0.3);letter-spacing:0.5px;}
 
-        .hero h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            color: var(--gold);
-            margin-bottom: 0.5rem;
-            letter-spacing: 1px;
-        }
+    /* ===== MOBİL ALT SABİT BAR ===== */
+    .sticky-support{position:fixed;bottom:0;left:0;right:0;z-index:999;background:rgba(5, 5, 5, 0.98);backdrop-filter:blur(15px);padding:12px 20px;display:none;gap:12px;box-shadow:0 -5px 25px rgba(0,0,0,0.6);border-top:2px solid var(--accent);}
+    .sticky-support a{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px;border-radius:8px;font-size:13px;font-weight:700;color:var(--white);}
+    .stk-call{background:var(--accent);color:var(--primary) !important;}
+    .stk-dir{background:var(--primary-light);border:1px solid rgba(255,255,255,0.1);}
 
-        .hero p {
-            font-size: 1.2rem;
-            color: #fff;
-            max-width: 600px;
-            margin-bottom: 2rem;
-            font-weight: 300;
-        }
+    /* ANIMASYON */
+    .reveal{opacity:0;transform:translateY(25px);transition:all 0.6s cubic-bezier(0.25, 1, 0.5, 1)}
+    .reveal.visible{opacity:1;transform:translateY(0)}
 
-        /* Global Section Styles */
-        section {
-            padding: 5rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 1rem;
-            color: #fff;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            color: var(--text-muted);
-            margin-bottom: 3rem;
-            font-weight: 300;
-        }
-
-        .divider {
-            width: 80px;
-            height: 2px;
-            background-color: var(--gold);
-            margin: 0 auto 3rem auto;
-        }
-
-        /* Gallery Section */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-        }
-
-        .gallery-item {
-            overflow: hidden;
-            border-radius: 10px;
-            border: 1px solid rgba(212, 175, 55, 0.1);
-            height: 250px;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.05);
-        }
-
-        /* Services Grid */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-        }
-
-        .service-card {
-            background-color: var(--card-bg);
-            border: 1px solid rgba(212, 175, 55, 0.15);
-            border-radius: 15px;
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--gold);
-        }
-
-        .service-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
-            padding-bottom: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .service-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: var(--gold);
-        }
-
-        .service-price {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #fff;
-            white-space: nowrap;
-        }
-
-        .service-details {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .service-detail-item {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-        }
-
-        .service-detail-item i {
-            color: var(--gold);
-            font-size: 0.95rem;
-            width: 20px;
-        }
-
-        /* Reviews Section */
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .review-card {
-            background-color: var(--bg-light);
-            border-left: 4px solid var(--gold);
-            padding: 2rem;
-            border-radius: 0 12px 12px 0;
-        }
-
-        .review-stars {
-            color: var(--gold);
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-        }
-
-        .review-text {
-            font-style: italic;
-            color: #dddddd;
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-        }
-
-        .review-author {
-            font-weight: 600;
-            font-size: 0.9rem;
-            color: var(--gold);
-        }
-
-        /* Contact & Location Section */
-        .contact-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 2rem;
-        }
-
-        .contact-info {
-            font-size: 1.2rem;
-        }
-
-        .contact-info a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        .contact-info a:hover {
-            color: var(--gold);
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.8rem;
-            padding: 1rem 2.5rem;
-            border-radius: 30px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-        }
-
-        .btn-gold {
-            background-color: var(--gold);
-            color: #000;
-        }
-
-        .btn-gold:hover {
-            background-color: var(--gold-hover);
-            transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            background-color: transparent;
-            border: 2px solid var(--gold);
-            color: var(--gold);
-            margin-top: 1rem;
-        }
-
-        .btn-outline:hover {
-            background-color: var(--gold);
-            color: #000;
-        }
-
-        /* Floating WhatsApp Button */
-        .floating-whatsapp {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            background-color: var(--whatsapp);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 35px;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-            text-decoration: none;
-            z-index: 1000;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        .floating-whatsapp:hover {
-            transform: scale(1.1);
-            background-color: var(--whatsapp-hover);
-        }
-
-        footer {
-            background-color: #0a0a0a;
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            border-top: 1px solid rgba(255,255,255,0.05);
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 900px) {
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-            .gallery-item {
-                height: 200px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            .hero h2 {
-                font-size: 2.5rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-            section {
-                padding: 3rem 1.5rem;
-            }
-        }
-    </style>
+    /* ===== RESPONSIVE ===== */
+    @media(max-width:1024px){
+      .packages-grid{grid-template-columns:1fr 1fr;}
+      .features-grid{grid-template-columns:repeat(2,1fr);}
+      .hero-title{font-size:46px;}
+    }
+    @media(max-width:768px){
+      .navbar{padding:15px 24px;background:rgba(5, 5, 5, 0.98);}
+      .menu-toggle{display:flex;}
+      .nav-links{position:fixed;top:0;right:-100%;width:280px;height:100vh;background:var(--primary);flex-direction:column;justify-content:center;gap:25px;transition:right 0.4s;padding:40px;}
+      .nav-links.open{right:0;}
+      .nav-links a{color:var(--white);font-size:16px;}
+      
+      .hero{text-align:center;}
+      .hero-bg::after{background:linear-gradient(180deg, rgba(5,5,5,0.95) 0%, rgba(5,5,5,0.8) 100%);}
+      .hero-btns{justify-content:center;}
+      .btn{width:100%;justify-content:center;}
+      
+      .section{padding:70px 0;}
+      .section-title{font-size:30px;}
+      .packages-grid, .features-grid, .contact-wrapper{grid-template-columns:1fr;gap:25px;}
+      
+      .sticky-support{display:flex;}
+      .footer{padding-bottom:80px;}
+      .footer-content{flex-direction:column;text-align:center;}
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Menü Alanı -->
-    <nav>
-        <a href="#" class="logo">Edessa Prime</a>
-        <div class="nav-links">
-            <a href="#">Anasayfa</a>
-            <a href="#galeri">Galeri</a>
-            <a href="#hizmetler">Hizmetler</a>
-            <a href="#yorumlar">Yorumlar</a>
-            <a href="#iletisim">İletişim</a>
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo" onclick="window.scrollTo(0,0)">
+      <div class="logo-container">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6h8v2H6v3h5v2H6v3h6v2H4V6zm11 0h3.5c1.4 0 2.5 1.1 2.5 2.5V11c0 1.4-1.1 2.5-2.5 2.5H17v4h-2V6zm2 5.5h1.5c.3 0 .5-.2.5-.5V8.5c0-.3-.2-.5-.5-.5H17v4z" fill="#dfb743"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-main">EDESSA PRIME</span>
+        <span class="logo-sub">MASAJ & SPA</span>
+      </div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#paketler">Masaj Paketleri</a>
+      <a href="#ozellikler">Ayrıcalıklar</a>
+      <a href="#iletisim">İletişim & Konum</a>
+      <a href="https://wa.me/905425986344?text=Merhaba,%20Edessa%20Prime%20Masaj%20Salonundan%20randevu%20almak%20istiyorum." target="_blank" class="nav-cta">Hızlı Randevu Al</a>
+    </div>
+    <div class="menu-toggle" id="menuToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>📍 Şanlıurfa Haliliye</span>
         </div>
-    </nav>
-
-    <!-- Giriş (Hero) Alanı -->
-    <header class="hero">
-        <h2>Edessa Prime</h2>
-        <p>Şanlıurfa'da bedeninizi ve ruhunuzu tazeleyecek lüks, hijyenik ve profesyonel masaj deneyimi.</p>
-        <a href="https://wa.me/905425986344?text=Merhaba,%20Edessa Prime%20Şanlıurfa%20Masaj%20Salonu%20için%20randevu%20almak%20istiyorum." class="btn btn-gold" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i> Hemen Randevu Al
-        </a>
-    </header>
-
-    <!-- Görseller / Galeri Alanı -->
-    <section id="galeri">
-        <h3 class="section-title">Salonumuzdan Kareler</h3>
-        <p class="section-subtitle">Günün stresinden uzaklaşacağınız konforlu ve huzurlu ortamımız</p>
-        <div class="divider"></div>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="http://googleusercontent.com/image_collection/image_retrieval/17297484329455004611_1" alt="Edessa Prime Masaj Odası">
-            </div>
-            <div class="gallery-item">
-                <img src="http://googleusercontent.com/image_collection/image_retrieval/17297484329455004611_2" alt="Lüks Spa Alanı">
-            </div>
-            <div class="gallery-item">
-                <img src="http://googleusercontent.com/image_collection/image_retrieval/17297484329455004611_3" alt="Masaj Terapisi">
-            </div>
+        <h1 class="hero-title">Bedeninize Hak Ettiği <span>Nefesi Verin</span></h1>
+        <p class="hero-p">Edessa Prime Masaj Salonu'nda seçkin atmosfer, uzman terapistler ve derinlemesine arındırıcı masaj teknikleriyle kronik ağrılarınızdan ve günün stresinden tamamen kurtulun.</p>
+        <div class="hero-btns">
+          <a href="tel:+905425986344" class="btn btn-main">
+            📞 Bilgi & Randevu İçin Ara
+          </a>
+          <a href="#paketler" class="btn btn-sub">Paketleri İncele</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hizmetler ve Fiyatlar -->
-    <section id="hizmetler" style="background-color: var(--bg-light);">
-        <h3 class="section-title">Hizmetlerimiz</h3>
-        <p class="section-subtitle">Sizin için en uygun masaj terapisini seçin</p>
-        <div class="divider"></div>
+  <section class="section" id="paketler">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Masaj & SPA Menüsü</span>
+        <h2 class="section-title">Ayrıcalıklı Paketlerimizi Keşfedin</h2>
+        <p class="section-desc">Uzman masözlerimiz tarafından uygulanan güncel seans süreleri, içerikler ve fiyat listemiz.</p>
+      </div>
 
-        <div class="services-grid">
-            <!-- Hizmet 1 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <span class="service-title">Klasik Masaj</span>
-                    <span class="service-price">1000 ₺</span>
-                </div>
-                <div class="service-details">
-                    <div class="service-detail-item">
-                        <i class="fa-regular fa-clock"></i> 35 Dakika
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hizmet 2 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <span class="service-title">Klasik Masaj</span>
-                    <span class="service-price">1500 ₺</span>
-                </div>
-                <div class="service-details">
-                    <div class="service-detail-item">
-                        <i class="fa-regular fa-clock"></i> 45 Dakika
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hizmet 3 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <span class="service-title">Soft Masaj</span>
-                    <span class="service-price">2000 ₺</span>
-                </div>
-                <div class="service-details">
-                    <div class="service-detail-item">
-                        <i class="fa-regular fa-clock"></i> 60 Dakika
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hizmet 4 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <span class="service-title">Medikal Masaj</span>
-                    <span class="service-price">2500 ₺</span>
-                </div>
-                <div class="service-details">
-                    <div class="service-detail-item">
-                        <i class="fa-regular fa-clock"></i> 60 Dakika
-                    </div>
-                    <div class="service-detail-item">
-                        <i class="fa-solid fa-circle-check"></i> Kese & Köpük Dahil
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hizmet 5 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <span class="service-title">VIP Masaj</span>
-                    <span class="service-price">3000 ₺</span>
-                </div>
-                <div class="service-details">
-                    <div class="service-detail-item">
-                        <i class="fa-regular fa-clock"></i> 80 Dakika
-                    </div>
-                    <div class="service-detail-item">
-                        <i class="fa-solid fa-circle-check"></i> Kese & Köpük
-                    </div>
-                    <div class="service-detail-item">
-                        <i class="fa-solid fa-ice-cream"></i> Meyve Tabağı İkramı
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hizmet 6 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <span class="service-title">Sultan Masajı</span>
-                    <span class="service-price">4000 ₺</span>
-                </div>
-                <div class="service-details">
-                    <div class="service-detail-item">
-                        <i class="fa-regular fa-clock"></i> 60 Dakika
-                    </div>
-                    <div class="service-detail-item">
-                        <i class="fa-solid fa-user-group"></i> 2 Masöz Eşliğinde
-                    </div>
-                </div>
-            </div>
+      <div class="packages-grid">
+        <div class="package-card reveal">
+          <h3>Klasik Masaj</h3>
+          <div class="p-time">⏱️ 30 Dakika</div>
+          <div class="p-price-box">
+            <div class="p-price">1.000 <span>₺</span></div>
+          </div>
+          <ul class="p-features">
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> 30 Dakika Profesyonel Masaj</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Dinlendirici Aromaterapi Yağları</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Seans Sonrası Ferahlatıcı Duş</li>
+          </ul>
+          <a href="https://wa.me/905425986344?text=Klasik%20Masaj%20paketi%20(1000%20TL)%20için%20randevu%20istiyorum." target="_blank" class="p-btn">Randevu Al</a>
         </div>
-    </section>
 
-    <!-- Müşteri Yorumları -->
-    <section id="yorumlar">
-        <h3 class="section-title">Müşteri Yorumları</h3>
-        <p class="section-subtitle">Misafirlerimizin deneyimleri</p>
-        <div class="divider"></div>
-
-        <div class="reviews-grid">
-            <div class="review-card">
-                <div class="review-stars">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                </div>
-                <p class="review-text">"Şanlıurfa'da gittiğim en temiz ve profesyonel salon. Medikal masaj seansı aldım, kronik sırt ağrılarıma çok iyi geldi. Personel çok ilgili."</p>
-                <p class="review-author">- Ahmet K.</p>
-            </div>
-
-            <div class="review-card">
-                <div class="review-stars">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                </div>
-                <p class="review-text">"VIP paketlerini denedik, meyve tabağı ikramından kese köpüğe kadar her şey kusursuz düşünülmüş. Ortamın sakinliği ve kokusu harika."</p>
-                <p class="review-author">- Murat Y.</p>
-            </div>
-
-            <div class="review-card">
-                <div class="review-stars">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                </div>
-                <p class="review-text">"Sultan masajı deneyimi tek kelimeyle muazzamdı. Çift masözle yapılan terapi tüm haftanın yorgunluğunu aldı. Kesinlikle tavsiye ederim."</p>
-                <p class="review-author">- Sinan T.</p>
-            </div>
+        <div class="package-card reveal" style="transition-delay: 0.1s;">
+          <h3>Klasik+ Masaj</h3>
+          <div class="p-time">⏱️ 45 Dakika</div>
+          <div class="p-price-box">
+            <div class="p-price">1.500 <span>₺</span></div>
+          </div>
+          <ul class="p-features">
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> 45 Dakika Yoğun Klasik Masaj</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Gevşetici Özel Bölgesel Terapi</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Seans Sonrası Ferahlatıcı Duş</li>
+          </ul>
+          <a href="https://wa.me/905425986344?text=Klasik%2B%20Masaj%20paketi%20(1500%20TL)%20için%20randevu%20istiyorum." target="_blank" class="p-btn">Randevu Al</a>
         </div>
-    </section>
 
-    <!-- İletişim & Harita Alanı -->
-    <section id="iletisim" style="background-color: var(--bg-light);">
-        <h3 class="section-title">İletişim & Ulaşım</h3>
-        <p class="section-subtitle">Rezervasyon ve konum bilgileri</p>
-        <div class="divider"></div>
-
-        <div class="contact-container">
-            <div class="contact-info">
-                <p><i class="fa-solid fa-phone" style="color: var(--gold); margin-right: 8px;"></i> Telefon: <a href="tel:05367393181">0533 329 9441 </a></p>
-                <p style="margin-top: 10px; font-size: 1rem; color: var(--text-muted);"><i class="fa-solid fa-location-dot"></i> Haliliye / Şanlıurfa</p>
-            </div>
-
-            <div>
-                <a href="https://share.google/WCjKDPJZJVPSl3yzE" class="btn btn-outline" target="_blank">
-                    <i class="fa-solid fa-map-location-dot"></i> Google Haritalarda Göster
-                </a>
-            </div>
+        <div class="package-card reveal" style="transition-delay: 0.2s;">
+          <h3>Soft Masaj</h3>
+          <div class="p-time">⏱️ 60 Dakika</div>
+          <div class="p-price-box">
+            <div class="p-price">2.000 <span>₺</span></div>
+          </div>
+          <ul class="p-features">
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> 60 Dakika Hafif ve Rahatlatıcı Masaj</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Anti-Stres Masaj Teknikleri</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Seans Sonrası Ferahlatıcı Duş</li>
+          </ul>
+          <a href="https://wa.me/905425986344?text=Soft%20Masaj%20paketi%20(2000%20TL)%20için%20randevu%20istiyorum." target="_blank" class="p-btn">Randevu Al</a>
         </div>
-    </section>
 
-    <!-- Sabit Sağ Alt WhatsApp Butonu -->
-    <a href="https://wa.me/905425986344?text=Merhaba,%20Edessa Prime%20Şanlıurfa%20Masaj%20Salonu%20için%20randevu%20almak%20istiyorum." class="floating-whatsapp" target="_blank" title="WhatsApp Randevu Hattı">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+        <div class="package-card featured reveal">
+          <div class="p-badge">Çok Satan</div>
+          <h3>Medikal Masaj</h3>
+          <div class="p-time" style="color:var(--accent);">⏱️ 80 Dakika</div>
+          <div class="p-price-box">
+            <div class="p-price">2.500 <span>₺</span></div>
+          </div>
+          <ul class="p-features">
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> 80 Dakika Kas ve Kulunç Terapisi</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Derin Doku Medikal Teknikler</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Geleneksel Kese & Köpük Terapisi</li>
+          </ul>
+          <a href="https://wa.me/905425986344?text=Medikal%20Masaj%20paketi%20(2500%20TL)%20için%20randevu%20istiyorum." target="_blank" class="p-btn">Randevu Al</a>
+        </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Edessa Prime Şanlıurfa Masaj Salonu. Tüm Hakları Saklıdır.</p>
-    </footer>
+        <div class="package-card reveal" style="transition-delay: 0.1s;">
+          <div class="p-badge">Eksiksiz Konfor</div>
+          <h3>VIP Masaj</h3>
+          <div class="p-time">⏱️ 80 Dakika</div>
+          <div class="p-price-box">
+            <div class="p-price">3.000 <span>₺</span></div>
+          </div>
+          <ul class="p-features">
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> 80 Dakika Premium Tam Vücut Masajı</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Hidromasajlı Lüks Jakuzi Keyfi</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Kese Köpük + Yüz/Cilt Bakımı</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Özel Meyve Tabağı & Zengin İkramlıklar</li>
+          </ul>
+          <a href="https://wa.me/905425986344?text=VIP%20Masaj%20paketi%20(3000%20TL)%20için%20randevu%20istiyorum." target="_blank" class="p-btn">Randevu Al</a>
+        </div>
 
+        <div class="package-card reveal" style="transition-delay: 0.2s;">
+          <div class="p-badge" style="background:#fff; color:var(--text-dark)">Dört El Terapi</div>
+          <h3>Sultan Masajı</h3>
+          <div class="p-time">⏱️ 60 Dakika</div>
+          <div class="p-price-box">
+            <div class="p-price">4.000 <span>₺</span></div>
+          </div>
+          <ul class="p-features">
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> 2 Masöz Eşliğinde Senkronize Masaj</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Detaylı Kese Köpük Banyosu</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Canlandırıcı Profesyonel Cilt Bakımı</li>
+            <li class="p-feature"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Özel Meyve Tabağı & Premium İkramlar</li>
+          </ul>
+          <a href="https://wa.me/905425986344?text=Sultan%20Masaj%20paketi%20(4000%20TL)%20için%20randevu%20istiyorum." target="_blank" class="p-btn">Randevu Al</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ozellikler" style="background: var(--bg-soft);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Neden Edessa Prime?</span>
+        <h2 class="section-title">Şanlıurfa'da Seçkin Bir SPA Deneyimi</h2>
+        <p class="section-desc">Maksimum hijyen standartları ve üst düzey misafir memnuniyeti ile her detayı özenle tasarlanmış salonumuz.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box reveal">
+          <span class="f-icon">🧼</span>
+          <h4>%100 Kusursuz Hijyen</h4>
+          <p>Her seans sonrası odalarımız, havlularımız ve jakuzilerimiz titizlikle dezenfekte edilerek yeni misafirimize steril şekilde hazırlanır.</p>
+        </div>
+        <div class="feature-box reveal" style="transition-delay: 0.1s;">
+          <span class="f-icon">💆‍♂️</span>
+          <h4>Sertifikalı Terapistler</h4>
+          <p>Alanında deneyimli, güler yüzlü ve anatomi bilgisine sahip profesyonel masöz kadromuzla kendinizi güvende hissedin.</p>
+        </div>
+        <div class="feature-box reveal" style="transition-delay: 0.2s;">
+          <span class="f-icon">🛁</span>
+          <h4>Lüks Odalar & Jakuzi</h4>
+          <p>VIP paketlerimizde yer alan gelişmiş hidromasaj sistemli jakuzilerimizle kaslarınızı tamamen rahatlatın.</p>
+        </div>
+        <div class="feature-box reveal" style="transition-delay: 0.3s;">
+          <span class="f-icon">🍉</span>
+          <h4>Gurme İkramlar</h4>
+          <p>Masaj sonrasında dinlenme alanımızda servis edilen taze mevsim meyveleri ve soğuk/sıcak zengin içecek alternatiflerinin tadını çıkarın.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="iletisim">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info-side reveal">
+          <span class="section-badge">İletişim & Konum</span>
+          <h3>Günün Yorgunluğuna Konforlu Bir Mola Verin</h3>
+          <p>Sıra beklemeden, dilediğiniz gün ve saatte seans alabilmek için lütfen gelmeden önce telefon veya WhatsApp hattımız üzerinden rezervasyonunuzu netleştirin.</p>
+          
+          <div class="c-method">
+            <div class="c-icon">📞</div>
+            <div class="c-details">
+              <h4>Telefon & Rezervasyon</h4>
+              <p><a href="tel:+905425986344" style="color: var(--accent); font-weight:700;">0542 598 63 44</a></p>
+            </div>
+          </div>
+
+          <div class="c-method">
+            <div class="c-icon">📍</div>
+            <div class="c-details">
+              <h4>Açık Adresimiz</h4>
+              <p>Şair Şevket, 119. Sk. aksoy apt kat 2 daire 3, 63000 Haliliye/Şanlıurfa</p>
+            </div>
+          </div>
+
+          <div class="c-method">
+            <div class="c-icon">🚗</div>
+            <div class="c-details">
+              <h4>Ulaşım ve Konum</h4>
+              <p>Şair Şevket Mahallesi'ndeki lüks salonumuza harita üzerinden yol tarifi alarak kolayca ulaşabilirsiniz.</p>
+              <a href="https://share.google/LP52cTqSQeDwVmch8" target="_blank" class="direction-btn">🌐 Google Haritalarda Aç</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-box reveal" style="transition-delay: 0.1s;">
+          <iframe src="https://maps.google.com/?q=Karşıyaka,+Haliliye+Şanlıurfa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="nav-logo" style="cursor:default">
+            <div class="logo-container">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6h8v2H6v3h5v2H6v3h6v2H4V6zm11 0h3.5c1.4 0 2.5 1.1 2.5 2.5V11c0 1.4-1.1 2.5-2.5 2.5H17v4h-2V6zm2 5.5h1.5c.3 0 .5-.2.5-.5V8.5c0-.3-.2-.5-.5-.5H17v4z" fill="#dfb743"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-main" style="color:#fff;">EDESSA PRIME</span>
+              <span class="logo-sub">MASAJ & SPA</span>
+            </div>
+          </div>
+          <p style="font-size:12px; color:var(--text-muted); margin-top:10px; max-width: 320px;">Şanlıurfa Haliliye'de lüks, hijyenik ve uzman masaj terapileriyle sağlığınıza, huzurunuza ve yenilenmenize odaklanıyoruz.</p>
+        </div>
+        <div style="font-size: 14px; color: rgba(255,255,255,0.6); font-weight:500;">
+          Masaj Paketleri • Ayrıcalıklar • İletişim • Randevu Al
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2026 Edessa Prime Masaj ve SPA Salonu. Tüm Hakları Saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-support">
+    <a href="tel:+905425986344" class="stk-call">📞 Telefon Et</a>
+    <a href="https://share.google/LP52cTqSQeDwVmch8" target="_blank" class="stk-dir">🗺️ Haritada Aç</a>
+  </div>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) { navbar.classList.add('scrolled'); } 
+      else { navbar.classList.remove('scrolled'); }
+    });
+
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('open');
+      });
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const revealOnScroll = () => {
+      for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        if (elementTop < windowHeight - 80) { reveals[i].classList.add('visible'); }
+      }
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
 </body>
 </html>
